@@ -3,11 +3,6 @@
 
 
 
-
-
-
-
-
 class Product {
 public:
     void Print();
@@ -22,7 +17,7 @@ public:
 
     Product()
     {
-        // Здесь можно инициализировать члены класса значениями по умолчанию
+        // Р—РґРµСЃСЊ РјРѕР¶РЅРѕ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°С‚СЊ С‡Р»РµРЅС‹ РєР»Р°СЃСЃР° Р·РЅР°С‡РµРЅРёСЏРјРё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
         name = "Unnamed Product";
         prise = 0.0f;
         quantity = 0;
@@ -30,26 +25,20 @@ public:
         date = "Unknown";
     }
 
-    // Конструктор с параметрами
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
     Product(const std::string& pname, float pprise, int pquantity, int pscore, const std::string& pdate)
         : name(pname), prise(pprise), quantity(pquantity), score(pscore), date(pdate) {}
 
-
-
-        // Метод для добавления продукта в массив
+        // РњРµС‚РѕРґ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РїСЂРѕРґСѓРєС‚Р° РІ РјР°СЃСЃРёРІ
         void addProduct(const Product& product);
-        // Метод для удаления продукта из массива
+        // РњРµС‚РѕРґ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ РїСЂРѕРґСѓРєС‚Р° РёР· РјР°СЃСЃРёРІР°
         void removeProduct(int index);
-        // Метод для сохранения массива продуктов в файл
+        // РњРµС‚РѕРґ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РјР°СЃСЃРёРІР° РїСЂРѕРґСѓРєС‚РѕРІ РІ С„Р°Р№Р»
         void saveToFile(const string& filename);
-        // Метод для загрузки массива продуктов из файла
+        // РњРµС‚РѕРґ РґР»СЏ Р·Р°РіСЂСѓР·РєРё РјР°СЃСЃРёРІР° РїСЂРѕРґСѓРєС‚РѕРІ РёР· С„Р°Р№Р»Р°
         void loadFromFile(const string& filename);
-        // Метод для вывода массива продуктов на экран
+        // РњРµС‚РѕРґ РґР»СЏ РІС‹РІРѕРґР° РјР°СЃСЃРёРІР° РїСЂРѕРґСѓРєС‚РѕРІ РЅР° СЌРєСЂР°РЅ
         void printProducts();
-
-
-
-
 
 private:
     std::string name;
@@ -58,12 +47,6 @@ private:
     int score;
     std::string date;
     int rating;
-    vector<Product> products; // Вектор для хранения продуктов
+    vector<Product> products; // Р’РµРєС‚РѕСЂ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РїСЂРѕРґСѓРєС‚РѕРІ
 };
-
-
-
-
-
-
 
